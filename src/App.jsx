@@ -12,7 +12,7 @@ import { DnDProvider } from './contexts/dndContext/DnDContext';
 
 import Sidebar from './components/sidebar/sidebar.component';
 import { onFetchChatId, onSendMessage } from './services/api';
-import { useReactHookFlow } from './hooks/useReactFlow';
+import { useReactHookFlow } from './hooks/useReactHookFlow';
 
 const DnDFlow  = () => {  
   const {
