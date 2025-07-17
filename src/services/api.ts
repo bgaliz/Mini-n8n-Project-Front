@@ -25,22 +25,20 @@ export const onFetchChatId = async (API_TOKEN) => {
 
   export const onSendMessage = async (message, API_TOKEN) => {
     const chatId = localStorage.getItem('chat_id');
-    if (!chatId) {
-      console.error('Chat ID not found. Please fetch the chat ID first.');
-      return;
-    }
-    const response = await fetch(`https://api.telegram.org/bot${API_TOKEN}/sendMessage`,
+    
+    const response = await fetch(`http://localhost:3001/webhook`,
       {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          chat_id: chatId,
-          text: message,
+          message,
+          token: API_TOKEN,
+          chatId,
         }),
       }
     );
     const result = await response.json();
-    console.log('Message sent:', result);
+    return result
   }
