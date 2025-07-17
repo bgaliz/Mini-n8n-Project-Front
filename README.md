@@ -1,4 +1,4 @@
-# My React Flow App
+# My Mini n8n Project
 
 Este projeto é uma aplicação React que integra funcionalidades com o Telegram via bot. Siga atentamente as instruções abaixo para garantir a instalação e funcionamento correto.
 
