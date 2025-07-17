@@ -1,12 +1,47 @@
-# React + Vite
+# My React Flow App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma aplicação React que integra funcionalidades com o Telegram via bot. Siga atentamente as instruções abaixo para garantir a instalação e funcionamento correto.
 
-Currently, two official plugins are available:
+## Pré-requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Node.js** e **npm** instalados em sua máquina.
+- **Conta no Telegram**.
+- **Projeto backend rodando:**  
+    Clone e execute o projeto [Mini-n8n-Project-Back](https://github.com/bgaliz/Mini-n8n-Project-Back) conforme instruções do próprio repositório.
 
-## Expanding the ESLint configuration
+## Criando um Bot no Telegram
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Acesse [BotFather](https://t.me/BotFather) no Telegram.
+2. Clique em "Start" para iniciar a conversa.
+3. Envie o comando `/newbot`.
+4. Escolha um nome para seu bot.
+5. Escolha um username único (deve terminar com `bot`, ex: `meubot_test_bot`).
+6. Após criado, o BotFather enviará uma mensagem com o **token de acesso** do seu bot.  
+     **Guarde este token**, pois será necessário para configurar o sistema.
+
+## Instalação do Projeto
+
+1. Clone este repositório:
+     ```bash
+     git clone https://github.com/bgaliz/Mini-n8n-Project-Front
+     cd Mini-n8n-Project-Front
+     ```
+2. Instale as dependências:
+     ```bash
+     npm install
+     ```
+3. Esteja ciente que você coletou o `TOKEN DE ACESSO` do bot, no Telegram. Pois você irá utiliza-lo ao abrir o projeto React Flow.
+4. Certifique-se que o projeto [Mini-n8n-Project-Back](https://github.com/bgaliz/Mini-n8n-Project-Back) backend está rodando.
+5. Inicie a aplicação:
+     ```bash
+     npm run dev
+     ```
+
+## Observações
+
+- O backend e o frontend devem estar rodando simultaneamente.
+- O token do bot é sensível, não compartilhe publicamente.
+- O tempo de requisição do bot está com delay de 25 segundos (offset) para não haver bloqueio durante o envio das mensagens para o Telegram. `VOCÊ É LIVRE PARA ALTERAR O VALOR!`
+- Siga as instruções do backend para eventuais configurações adicionais.
+
+Tudo pronto! Agora você pode utilizar o sistema normalmente.
