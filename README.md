@@ -17,7 +17,7 @@ Este projeto é uma aplicação React que integra funcionalidades com o Telegram
 4. Escolha um nome para seu bot.
 5. Escolha um username único (deve terminar com `bot`, ex: `meubot_test_bot`).
 6. Após criado, o BotFather enviará uma mensagem com o **token de acesso** do seu bot.  
-     **Guarde este token**, pois será necessário para configurar o sistema.
+     **Guarde este token**, pois será necessário para este projeto.
 
 ## Instalação do Projeto
 
